@@ -1,0 +1,23 @@
+.gallery {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  row-gap: 48px;
+  column-gap: 24px;
+  background-color: #fff;
+  margin: 100px 156px;
+  padding: 0;
+}
+
+.gallery-item {
+  width: calc((100%-48px) / 3);
+  height: 300px;
+  overflow: hidden;
+}
+
+.gallery-item-img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
