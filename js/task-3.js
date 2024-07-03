@@ -1,7 +1,7 @@
 const userName = document.querySelector("#name-input");
 const span = document.querySelector("#name-output");
 
-userName.addEventListener("change", handleChange);
+userName.addEventListener("input", handleChange);
 
 function handleChange(event) {
   const userName = event.currentTarget.value.trim();

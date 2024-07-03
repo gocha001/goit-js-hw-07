@@ -16,15 +16,13 @@ function createBoxes() {
   const inputValue = inputNumber.value;
   if (inputValue < 1 || inputValue > 100) {
     alert(`Enter a value between 1 and 100`);
-    inputNumber.value = "";
   } else {
     let boxed = "";
     let boxSize = 30;
     for (let i = 0; i < inputValue; i += 1) {
       const randomColor = getRandomHexColor();
-      const box = `<div style="width: ${boxSize}px; height: ${boxSize}px; 
+      boxed += `<div style="width: ${boxSize}px; height: ${boxSize}px; 
     background-color:${randomColor};"></div>`;
-      boxed += box;
       boxSize += 10;
     }
     boxArea.innerHTML = boxed;
